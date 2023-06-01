@@ -1,0 +1,44 @@
+<!--Practice with the Cascade. In this exercise, you will create two web pages that link to the same external style sheet. After modifying the configuration in the external style sheet, you will test your pages again and find that they automatically pick up the new style configuration. Finally, you will add an inline style to one of the pages and find that it takes effect and overrides the external style. 
+a)	Create a web page that includes an unordered list describing at least three advan- tages of using CSS. The text “CSS Advantages” should be contained within <h1> tags. This page should include a hyperlink to the W3C website. Write the HTML code so that one of the advantages is configured to be a class called news. Place an e-mail link to yourself on the web page. The web page should be associated with the external style sheet called ex8.css. Save the page as advantage.html. 
+b)	Create an external style sheet (call it ex8.css) to format as follows: document back- ground color of white; document text color of #000099; and document font family of Arial, Helvetica, or sans-serif. Hyperlinks should have a background color of gray (#CCCCCC). <h1> elements should use the Times New Roman font with black text color. The news class should use red italic text. 
+c)	Launch a browser, and test your work. Display the advantage.html page. It should use the formatting configured in ex8.css. Modify the web page or the CSS file until your page displays as requested. 
+d)	Change the configuration of the external style sheet (ex8.css) to use a document background color of black, document text color of white, and <h1> text color of gray (#CCCCCC). Save the file. Launch a browser, and test the advantage.html page. Notice how it picks up the new styles from the external style sheet. 
+e)	Modify the advantage.html file to use an inline style. The inline style should be applied to the <h1> tag and configure it to have red text. Save the advantage.html page, and test in a browser. Notice how the <h1> text color specified in the style sheet is overridden by the inline style.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manuel&copy; 3.8</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Unit_lab_3_8_2.css">
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>UNIT LAB 3.8</h1>
+            <h1 style="color: red">CSS Advantages</h1>
+        </hgroup>
+        <nav>
+            <a href="https://www.w3.org">W3</a>
+        </nav>
+    </header>
+
+    <body>
+        <ul>
+            <li>Time saver:</li>
+            <dd>You can write CSS sheet once and reuse it for different HTML pages.</dd>
+            <li class="new">Great user experience:</li>
+            <dd>CSS allows to change style, layouts, colors and backgrounds. Without the "Cascade Style Sheet" the
+                websites would de much harder to use and definetly less pleasing.</dd>
+            <li>Mantainence:</li>
+            <dd>To do great changes in a website you can simply modify the CSS sheet and the whole HTML page will
+                update.</dd>
+        </ul>
+        <p>If anything should be changed, please let me know through my <a
+                href="mailto:manuel.iaqua@gmail.com">e-mail</a>.</p>
+        <footer>Manuel&copy;</footer>
+    </body>
+</body>
+</html>
